@@ -14,9 +14,6 @@
 
 **Bharat Alert** is a simulation of an Amber Alert–style system for India. It is a fully web-managed alert system allowing users to report missing children, and enabling admins to track, verify, and manage alerts and sightings.
 
-This version uses a **mock database** and test accounts like:
-- `227y1a05i4@mlritm.ac.in` (admin/user)
-- `227y1a05i3@mlritm.ac.in` (admin/user)
 
 ---
 
@@ -83,7 +80,7 @@ This version uses a **mock database** and test accounts like:
 
 | User Report Form | Admin Dashboard |
 |------------------|------------------|
-| ![Form](screenshots/form.png) | ![Dashboard](screenshots/dashboard.png) |
+| ![Form](screenshots/form.png) | ![Dashboard](screenshots/dashboardd.png) |
 
 | Alerts Board | Sighting Report |
 |--------------|------------------|
