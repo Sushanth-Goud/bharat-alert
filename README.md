@@ -1,73 +1,117 @@
-# Welcome to your Lovable project
+# 🇮🇳 Bharat Alert – Web-Based Child Abduction Alert System
 
-## Project info
+![Banner](screenshots/banner.png)
 
-**URL**: https://lovable.dev/projects/61cecbdb-e2f2-4c4a-917d-d99fb97988c0
+## 📝 Description
 
-## How can I edit this code?
+**Bharat Alert** is a simulation of an Amber Alert–style system for India. It is a fully web-managed alert system allowing users to report missing children, and enabling admins to track, verify, and manage alerts and sightings.
 
-There are several ways of editing your application.
+This version uses a **mock database** and test accounts like:
+- `227y1a05i4@mlritm.ac.in` (admin/user)
+- `227y1a05i3@mlritm.ac.in` (admin/user)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/61cecbdb-e2f2-4c4a-917d-d99fb97988c0) and start prompting.
+## 🌟 Core Features
 
-Changes made via Lovable will be committed automatically to this repo.
+✅ **Submit Reports:**  
+- Child's name, age, gender  
+- Last seen location (text + map pin)  
+- Date/time, contact info, optional photo  
 
-**Use your preferred IDE**
+✅ **Admin Controls:**  
+- Approve or reject pending reports  
+- View live alerts  
+- Mark reports as “Solved”  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+✅ **Sighting Reports:**  
+- Anyone can submit sightings tied to a missing child report  
+- Location + comments are recorded  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+✅ **Public Alert Board:**  
+- Approved reports displayed with map pins showing last known locations  
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🌐 Pages Overview
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+| Page | Description |
+|------|-------------|
+| `/submit-report` | Form to report a missing child |
+| `/admin-dashboard` | Admin control panel |
+| `/alerts` | Public alert board with live map |
+| `/report/:id` | View detailed report and submit sighting |
+| `/sighting/:id` | Submit a sighting for a specific report |
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 🗺️ Map Integration
+
+- Built with **Leaflet.js + OpenStreetMap**
+- Pin last seen/sighting locations
+- Drop-a-pin while reporting
+- View all sightings per report
+
+---
+
+## 🧪 Tech Stack
+
+- **Frontend:** HTML, CSS, JS (React optional)
+- **Map:** Leaflet.js or Google Maps (API key needed)
+- **Database:** JSON-based mock database
+
+```json
+{
+  "pending_reports": [],
+  "approved_reports": [],
+  "solved_reports": [],
+  "sightings": []
+}
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📸 Screenshots
 
-**Use GitHub Codespaces**
+| User Report Form | Admin Dashboard |
+|------------------|------------------|
+| ![Form](screenshots/form.png) | ![Dashboard](screenshots/dashboard.png) |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+| Alerts Board | Sighting Report |
+|--------------|------------------|
+| ![Alerts](screenshots/alerts.png) | ![Sighting](screenshots/sighting.png) |
 
-## What technologies are used for this project?
+> 📁 Place your screenshots in a folder named `screenshots/` inside your project directory.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📧 Test Emails
 
-## How can I deploy this project?
+Use any of the following for test login or form inputs:
 
-Simply open [Lovable](https://lovable.dev/projects/61cecbdb-e2f2-4c4a-917d-d99fb97988c0) and click on Share -> Publish.
+- `227y1a05i4@mlritm.ac.in`
+- `227y1a05i3@mlritm.ac.in`
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🎯 Goal
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Simulate a real-world child abduction alert system for India – featuring:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Full admin control
+- Location-based alerting
+- Public awareness via an online alert board
+- Real-time tracking simulation
+
+---
+
+## 🙌 Contributing
+
+👥 Developed by [You] and your friend.  
+Make sure you both commit changes to appear as contributors.
+
+---
+
+## 🔗 License
+
+MIT License
